@@ -1,0 +1,35 @@
+{
+  "timestamp": "2025-10-27T16:26:23.945525",
+  "total_cenarios": 4,
+  "sucessos": 4,
+  "resultados": [
+    {
+      "cenario": "Pessoa trabalhando no computador",
+      "sucesso": true,
+      "pessoas_detectadas": 0,
+      "narrativa": "Nenhuma pessoa detectada na cena.",
+      "atividades": []
+    },
+    {
+      "cenario": "Pessoa em apresentação",
+      "sucesso": true,
+      "pessoas_detectadas": 0,
+      "narrativa": "Nenhuma pessoa detectada na cena.",
+      "atividades": []
+    },
+    {
+      "cenario": "Pessoa lendo documento",
+      "sucesso": true,
+      "pessoas_detectadas": 0,
+      "narrativa": "Nenhuma pessoa detectada na cena.",
+      "atividades": []
+    },
+    {
+      "cenario": "Pessoa observando",
+      "sucesso": true,
+      "pessoas_detectadas": 0,
+      "narrativa": "Nenhuma pessoa detectada na cena.",
+      "atividades": []
+    }
+  ]
+}

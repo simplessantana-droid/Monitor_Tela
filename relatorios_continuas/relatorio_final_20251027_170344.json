@@ -1,0 +1,138 @@
+{
+  "sessao_completa": {
+    "inicio": "2025-10-27T17:02:49.978835",
+    "fim": "2025-10-27T17:03:44.239572",
+    "duracao_total": "0:00:54.260686",
+    "capturas_realizadas": 21
+  },
+  "estatisticas_finais": {
+    "total_pessoas_detectadas": 51,
+    "total_objetos_detectados": 30,
+    "media_pessoas_por_captura": 2.43,
+    "media_objetos_por_captura": 1.43,
+    "capturas_por_minuto": 21.0
+  },
+  "todas_atividades": [
+    {
+      "timestamp": "2025-10-27T17:02:51.334111",
+      "pessoas": 0,
+      "objetos": 1,
+      "narrativa": "Nenhuma pessoa detectada na cena. Objetos identificados: 1 laptop."
+    },
+    {
+      "timestamp": "2025-10-27T17:02:52.765279",
+      "pessoas": 0,
+      "objetos": 1,
+      "narrativa": "Nenhuma pessoa detectada na cena. Objetos identificados: 1 laptop."
+    },
+    {
+      "timestamp": "2025-10-27T17:02:55.377989",
+      "pessoas": 0,
+      "objetos": 1,
+      "narrativa": "Nenhuma pessoa detectada na cena. Objetos identificados: 1 laptop."
+    },
+    {
+      "timestamp": "2025-10-27T17:02:57.096411",
+      "pessoas": 0,
+      "objetos": 1,
+      "narrativa": "Nenhuma pessoa detectada na cena. Objetos identificados: 1 laptop."
+    },
+    {
+      "timestamp": "2025-10-27T17:02:59.562150",
+      "pessoas": 2,
+      "objetos": 1,
+      "narrativa": "Detectadas 2 pessoa(s) na cena. Pessoa 1: está na posição agachado_ou_deitado, com as mãos segurando objeto. Pessoa 2: está gesticulando durante uma conversa. Objetos identificados: 1 tv."
+    },
+    {
+      "timestamp": "2025-10-27T17:03:01.933399",
+      "pessoas": 2,
+      "objetos": 2,
+      "narrativa": "Detectadas 2 pessoa(s) na cena. Pessoa 1: está na posição sentado, com as mãos maos no colo. Pessoa 2: está na posição agachado_ou_deitado, com as mãos segurando objeto. Objetos identificados: 2 suitcases. Detectadas 1 interação(ões) entre pessoas e objetos."
+    },
+    {
+      "timestamp": "2025-10-27T17:03:03.876989",
+      "pessoas": 3,
+      "objetos": 4,
+      "narrativa": "Detectadas 3 pessoa(s) na cena. Pessoa 1: está na posição sentado, com as mãos maos no colo. Pessoa 2: está gesticulando durante uma conversa, olhando para a direita. Objetos identificados: 1 tv, 2 cell phones, 1 chair. Detectadas 2 interação(ões) entre pessoas e objetos."
+    },
+    {
+      "timestamp": "2025-10-27T17:03:05.687840",
+      "pessoas": 2,
+      "objetos": 1,
+      "narrativa": "Detectadas 2 pessoa(s) na cena. Pessoa 1: está na posição sentado, com as mãos maos no colo. Pessoa 2: está na posição agachado_ou_deitado, com as mãos segurando objeto. Objetos identificados: 1 cup. Detectadas 1 interação(ões) entre pessoas e objetos."
+    },
+    {
+      "timestamp": "2025-10-27T17:03:07.451485",
+      "pessoas": 4,
+      "objetos": 3,
+      "narrativa": "Detectadas 4 pessoa(s) na cena. Pessoa 1: está na posição agachado_ou_deitado, com as mãos segurando objeto. Pessoa 2: está na posição sentado, com as mãos maos no colo. Objetos identificados: 2 tvs, 1 cell phone. Detectadas 2 interação(ões) entre pessoas e objetos."
+    },
+    {
+      "timestamp": "2025-10-27T17:03:09.589294",
+      "pessoas": 3,
+      "objetos": 1,
+      "narrativa": "Detectadas 3 pessoa(s) na cena. Pessoa 1: está na posição sentado, com as mãos maos no colo. Pessoa 2: está na posição agachado_ou_deitado, com as mãos segurando objeto. Objetos identificados: 1 tv. Detectadas 1 interação(ões) entre pessoas e objetos."
+    },
+    {
+      "timestamp": "2025-10-27T17:03:12.472727",
+      "pessoas": 3,
+      "objetos": 1,
+      "narrativa": "Detectadas 3 pessoa(s) na cena. Pessoa 1: está na posição agachado_ou_deitado, com as mãos segurando objeto. Pessoa 2: está na posição em_pe_relaxado, apontando. Objetos identificados: 1 suitcase. Detectadas 1 interação(ões) entre pessoas e objetos."
+    },
+    {
+      "timestamp": "2025-10-27T17:03:14.880471",
+      "pessoas": 4,
+      "objetos": 1,
+      "narrativa": "Detectadas 4 pessoa(s) na cena. Pessoa 1: está na posição agachado_ou_deitado, com as mãos segurando objeto. Pessoa 2: está na posição em_pe_relaxado, gesticulando. Objetos identificados: 1 tv. Detectadas 1 interação(ões) entre pessoas e objetos."
+    },
+    {
+      "timestamp": "2025-10-27T17:03:17.112410",
+      "pessoas": 4,
+      "objetos": 0,
+      "narrativa": "Detectadas 4 pessoa(s) na cena. Pessoa 1: está na posição sentado, com as mãos maos no colo. Pessoa 2: está na posição agachado_ou_deitado, com as mãos segurando objeto."
+    },
+    {
+      "timestamp": "2025-10-27T17:03:18.791484",
+      "pessoas": 3,
+      "objetos": 0,
+      "narrativa": "Detectadas 3 pessoa(s) na cena. Pessoa 1: está na posição agachado_ou_deitado, com as mãos segurando objeto. Pessoa 2: está na posição em_pe_relaxado, apontando."
+    },
+    {
+      "timestamp": "2025-10-27T17:03:21.615548",
+      "pessoas": 4,
+      "objetos": 2,
+      "narrativa": "Detectadas 4 pessoa(s) na cena. Pessoa 1: está na posição agachado_ou_deitado, com as mãos segurando objeto. Pessoa 2: está na posição em_pe_relaxado, gesticulando. Objetos identificados: 2 tvs. Detectadas 2 interação(ões) entre pessoas e objetos."
+    },
+    {
+      "timestamp": "2025-10-27T17:03:24.126518",
+      "pessoas": 4,
+      "objetos": 1,
+      "narrativa": "Detectadas 4 pessoa(s) na cena. Pessoa 1: está na posição em_pe_ereto, gesticulando. Pessoa 2: está na posição agachado_ou_deitado, com as mãos segurando objeto. Objetos identificados: 1 tv. Detectadas 1 interação(ões) entre pessoas e objetos."
+    },
+    {
+      "timestamp": "2025-10-27T17:03:26.242909",
+      "pessoas": 3,
+      "objetos": 1,
+      "narrativa": "Detectadas 3 pessoa(s) na cena. Pessoa 1: está na posição em_pe_relaxado, gesticulando. Pessoa 2: está na posição agachado_ou_deitado, com as mãos segurando objeto. Objetos identificados: 1 tv."
+    },
+    {
+      "timestamp": "2025-10-27T17:03:28.705892",
+      "pessoas": 4,
+      "objetos": 3,
+      "narrativa": "Detectadas 4 pessoa(s) na cena. Pessoa 1: está na posição agachado_ou_deitado, com as mãos segurando objeto. Pessoa 2: está gesticulando durante uma conversa, olhando para a direita. Objetos identificados: 3 tvs. Detectadas 1 interação(ões) entre pessoas e objetos."
+    },
+    {
+      "timestamp": "2025-10-27T17:03:36.560378",
+      "pessoas": 3,
+      "objetos": 3,
+      "narrativa": "Detectadas 3 pessoa(s) na cena. Pessoa 1: está na posição em_pe_ereto, gesticulando. Pessoa 2: está na posição em_pe_ereto, gesticulando. Objetos identificados: 2 chairs, 1 tv. Detectadas 3 interação(ões) entre pessoas e objetos."
+    },
+    {
+      "timestamp": "2025-10-27T17:03:40.323035",
+      "pessoas": 3,
+      "objetos": 2,
+      "narrativa": "Detectadas 3 pessoa(s) na cena. Pessoa 1: está na posição em_pe_relaxado, apontando. Pessoa 2: está na posição agachado_ou_deitado, com as mãos segurando objeto. Objetos identificados: 2 tvs."
+    }
+  ],
+  "timestamp_relatorio": "2025-10-27T17:03:44.239696"
+}

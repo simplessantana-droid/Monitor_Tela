@@ -1,0 +1,34 @@
+{
+  "relatorio_periodico": {
+    "timestamp": "2025-10-27T17:10:17.787544",
+    "intervalo_minutos": 1.0,
+    "capturas_neste_periodo": 8,
+    "tempo_sessao_segundos": 64.79
+  },
+  "estatisticas_atuais": {
+    "total_pessoas_detectadas": 3,
+    "total_objetos_detectados": 4,
+    "capturas_realizadas": 8,
+    "capturas_por_minuto": 7.41,
+    "media_pessoas_por_captura": 0.38,
+    "media_objetos_por_captura": 0.5
+  },
+  "atividades_recentes": [
+    {
+      "timestamp": "2025-10-27T17:10:13.699583",
+      "pessoas": 0,
+      "objetos": 1,
+      "narrativa": "Nenhuma pessoa detectada na cena. Objetos identificados: 1 laptop."
+    },
+    {
+      "timestamp": "2025-10-27T17:10:17.781341",
+      "pessoas": 3,
+      "objetos": 3,
+      "narrativa": "Detectadas 3 pessoa(s) na cena. Pessoa 1: está na posição em_pe_relaxado, gesticulando. Pessoa 2: está na posição em_pe_ereto, gesticulando. Objetos identificados: 3 tvs. Detectadas 2 interação(ões) entre pessoas e objetos."
+    }
+  ],
+  "configuracao": {
+    "intervalo_captura_segundos": 0.5,
+    "intervalo_relatorio_segundos": 60
+  }
+}

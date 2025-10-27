@@ -1,0 +1,60 @@
+{
+  "sessao_completa": {
+    "inicio": "2025-10-27T17:09:13.842376",
+    "fim": "2025-10-27T17:10:41.088543",
+    "duracao_total": "0:01:27.246156",
+    "capturas_realizadas": 14
+  },
+  "estatisticas_finais": {
+    "total_pessoas_detectadas": 17,
+    "total_objetos_detectados": 12,
+    "media_pessoas_por_captura": 1.21,
+    "media_objetos_por_captura": 0.86,
+    "capturas_por_minuto": 9.63
+  },
+  "todas_atividades": [
+    {
+      "timestamp": "2025-10-27T17:10:13.699583",
+      "pessoas": 0,
+      "objetos": 1,
+      "narrativa": "Nenhuma pessoa detectada na cena. Objetos identificados: 1 laptop."
+    },
+    {
+      "timestamp": "2025-10-27T17:10:17.781341",
+      "pessoas": 3,
+      "objetos": 3,
+      "narrativa": "Detectadas 3 pessoa(s) na cena. Pessoa 1: está na posição em_pe_relaxado, gesticulando. Pessoa 2: está na posição em_pe_ereto, gesticulando. Objetos identificados: 3 tvs. Detectadas 2 interação(ões) entre pessoas e objetos."
+    },
+    {
+      "timestamp": "2025-10-27T17:10:21.668642",
+      "pessoas": 3,
+      "objetos": 3,
+      "narrativa": "Detectadas 3 pessoa(s) na cena. Pessoa 1: está gesticulando durante uma conversa, olhando para a direita. Pessoa 2: está na posição em_pe_ereto, gesticulando. Objetos identificados: 2 tvs, 1 laptop. Detectadas 2 interação(ões) entre pessoas e objetos."
+    },
+    {
+      "timestamp": "2025-10-27T17:10:26.421026",
+      "pessoas": 3,
+      "objetos": 1,
+      "narrativa": "Detectadas 3 pessoa(s) na cena. Pessoa 1: está na posição em_pe_relaxado, apontando. Pessoa 2: está na posição em_pe_relaxado, apontando. Objetos identificados: 1 frisbee. Detectadas 1 interação(ões) entre pessoas e objetos."
+    },
+    {
+      "timestamp": "2025-10-27T17:10:29.614787",
+      "pessoas": 3,
+      "objetos": 0,
+      "narrativa": "Detectadas 3 pessoa(s) na cena. Pessoa 1: está gesticulando durante uma conversa, olhando para a direita. Pessoa 2: está na posição em_pe_ereto, gesticulando."
+    },
+    {
+      "timestamp": "2025-10-27T17:10:32.612171",
+      "pessoas": 3,
+      "objetos": 0,
+      "narrativa": "Detectadas 3 pessoa(s) na cena. Pessoa 1: está gesticulando durante uma conversa, olhando para a direita. Pessoa 2: está na posição em_pe_ereto, gesticulando."
+    },
+    {
+      "timestamp": "2025-10-27T17:10:35.562242",
+      "pessoas": 2,
+      "objetos": 4,
+      "narrativa": "Detectadas 2 pessoa(s) na cena. Pessoa 1: está na posição em_pe_ereto, gesticulando. Pessoa 2: está na posição em_pe_relaxado, gesticulando. Objetos identificados: 2 tvs, 1 chair, 1 dining table. Detectadas 1 interação(ões) entre pessoas e objetos."
+    }
+  ],
+  "timestamp_relatorio": "2025-10-27T17:10:41.088604"
+}

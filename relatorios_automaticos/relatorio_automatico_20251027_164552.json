@@ -1,0 +1,40 @@
+{
+  "periodo": {
+    "inicio": "2025-10-27T16:44:52.191587",
+    "fim": "2025-10-27T16:45:52.191587",
+    "duracao_minutos": 1
+  },
+  "estatisticas_gerais": {
+    "total_capturas": 2,
+    "total_pessoas_detectadas": 0,
+    "total_objetos_detectados": 0,
+    "media_pessoas_por_captura": 0.0,
+    "media_objetos_por_captura": 0.0
+  },
+  "analise_atividades": {
+    "atividades_frequentes": {},
+    "posturas_frequentes": {},
+    "movimentos_mao_frequentes": {},
+    "movimentos_cabeca_frequentes": {}
+  },
+  "analise_temporal": {
+    "atividades_por_hora": {
+      "16:00": {}
+    }
+  },
+  "narrativa_consolidada": "Durante os últimos 1 minutos, foram realizadas 2 capturas. ",
+  "resumo_executivo": {
+    "taxa_ocupacao_percent": 0.0,
+    "capturas_com_atividade": 0,
+    "total_capturas": 2,
+    "atividade_principal": null,
+    "total_atividades_detectadas": 0,
+    "variedade_atividades": 0
+  },
+  "alertas": [
+    {
+      "tipo": "warning",
+      "mensagem": "Baixa atividade detectada: 2/2 capturas sem pessoas"
+    }
+  ]
+}

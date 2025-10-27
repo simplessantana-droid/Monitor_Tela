@@ -1,0 +1,21 @@
+{
+  "relatorio_periodico": {
+    "timestamp": "2025-10-27T16:54:20.738627",
+    "intervalo_minutos": 1.0,
+    "capturas_neste_periodo": 38,
+    "tempo_sessao_segundos": 61.74
+  },
+  "estatisticas_atuais": {
+    "total_pessoas_detectadas": 0,
+    "total_objetos_detectados": 0,
+    "capturas_realizadas": 38,
+    "capturas_por_minuto": 36.93,
+    "media_pessoas_por_captura": 0.0,
+    "media_objetos_por_captura": 0.0
+  },
+  "atividades_recentes": [],
+  "configuracao": {
+    "intervalo_captura_segundos": 0.5,
+    "intervalo_relatorio_segundos": 60
+  }
+}

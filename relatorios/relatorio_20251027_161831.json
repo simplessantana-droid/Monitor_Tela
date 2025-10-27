@@ -1,0 +1,606 @@
+{
+  "timestamp": "2025-10-27T16:18:31.317564",
+  "resumo": {
+    "total_capturas": 8,
+    "duracao_segundos": 10.32,
+    "capturas_por_minuto": 46.5,
+    "total_pessoas": 8,
+    "total_objetos": 0,
+    "total_interacoes": 0,
+    "movimento_geral": 40.07999999999999,
+    "media_pessoas_por_captura": 1.0,
+    "media_objetos_por_captura": 0.0,
+    "periodo_maior_atividade": "16:18:21"
+  },
+  "deteccoes": {
+    "pessoas": [
+      {
+        "id": "pessoa_sim_centro",
+        "tipo": "person",
+        "confianca": 0.85,
+        "posicao": {
+          "x": 360,
+          "y": 225,
+          "largura": 360,
+          "altura": 300
+        },
+        "timestamp": "2025-10-27T16:18:21.433830"
+      },
+      {
+        "id": "pessoa_sim_centro",
+        "tipo": "person",
+        "confianca": 0.85,
+        "posicao": {
+          "x": 360,
+          "y": 225,
+          "largura": 360,
+          "altura": 300
+        },
+        "timestamp": "2025-10-27T16:18:22.821503"
+      },
+      {
+        "id": "pessoa_sim_centro",
+        "tipo": "person",
+        "confianca": 0.85,
+        "posicao": {
+          "x": 360,
+          "y": 225,
+          "largura": 360,
+          "altura": 300
+        },
+        "timestamp": "2025-10-27T16:18:23.976121"
+      },
+      {
+        "id": "pessoa_sim_centro",
+        "tipo": "person",
+        "confianca": 0.85,
+        "posicao": {
+          "x": 360,
+          "y": 225,
+          "largura": 360,
+          "altura": 300
+        },
+        "timestamp": "2025-10-27T16:18:25.220797"
+      },
+      {
+        "id": "pessoa_sim_centro",
+        "tipo": "person",
+        "confianca": 0.85,
+        "posicao": {
+          "x": 360,
+          "y": 225,
+          "largura": 360,
+          "altura": 300
+        },
+        "timestamp": "2025-10-27T16:18:26.473823"
+      },
+      {
+        "id": "pessoa_sim_centro",
+        "tipo": "person",
+        "confianca": 0.85,
+        "posicao": {
+          "x": 360,
+          "y": 225,
+          "largura": 360,
+          "altura": 300
+        },
+        "timestamp": "2025-10-27T16:18:27.783419"
+      },
+      {
+        "id": "pessoa_sim_centro",
+        "tipo": "person",
+        "confianca": 0.85,
+        "posicao": {
+          "x": 360,
+          "y": 225,
+          "largura": 360,
+          "altura": 300
+        },
+        "timestamp": "2025-10-27T16:18:28.984935"
+      },
+      {
+        "id": "pessoa_sim_centro",
+        "tipo": "person",
+        "confianca": 0.85,
+        "posicao": {
+          "x": 360,
+          "y": 225,
+          "largura": 360,
+          "altura": 300
+        },
+        "timestamp": "2025-10-27T16:18:30.265838"
+      }
+    ],
+    "objetos": []
+  },
+  "analises": {
+    "movimentos": [
+      {
+        "id": "movimento_161821",
+        "tipo": "movimento_geral",
+        "intensidade": 5.01,
+        "descricao": "Movimento detectado com intensidade 5.0%",
+        "timestamp": "2025-10-27T16:18:21.506846"
+      },
+      {
+        "id": "movimento_161822",
+        "tipo": "movimento_geral",
+        "intensidade": 5.01,
+        "descricao": "Movimento detectado com intensidade 5.0%",
+        "timestamp": "2025-10-27T16:18:22.852214"
+      },
+      {
+        "id": "movimento_161824",
+        "tipo": "movimento_geral",
+        "intensidade": 5.01,
+        "descricao": "Movimento detectado com intensidade 5.0%",
+        "timestamp": "2025-10-27T16:18:24.002604"
+      },
+      {
+        "id": "movimento_161825",
+        "tipo": "movimento_geral",
+        "intensidade": 5.01,
+        "descricao": "Movimento detectado com intensidade 5.0%",
+        "timestamp": "2025-10-27T16:18:25.268339"
+      },
+      {
+        "id": "movimento_161826",
+        "tipo": "movimento_geral",
+        "intensidade": 5.01,
+        "descricao": "Movimento detectado com intensidade 5.0%",
+        "timestamp": "2025-10-27T16:18:26.512120"
+      },
+      {
+        "id": "movimento_161827",
+        "tipo": "movimento_geral",
+        "intensidade": 5.01,
+        "descricao": "Movimento detectado com intensidade 5.0%",
+        "timestamp": "2025-10-27T16:18:27.824122"
+      },
+      {
+        "id": "movimento_161829",
+        "tipo": "movimento_geral",
+        "intensidade": 5.01,
+        "descricao": "Movimento detectado com intensidade 5.0%",
+        "timestamp": "2025-10-27T16:18:29.009053"
+      },
+      {
+        "id": "movimento_161830",
+        "tipo": "movimento_geral",
+        "intensidade": 5.01,
+        "descricao": "Movimento detectado com intensidade 5.0%",
+        "timestamp": "2025-10-27T16:18:30.291848"
+      }
+    ],
+    "interacoes": [],
+    "atividades_faciais": []
+  },
+  "capturas": [
+    {
+      "timestamp": "2025-10-27T16:18:21.650971",
+      "arquivo": "capturas\\captura_20251027_161821_0001.jpg",
+      "tamanho_arquivo": 170618,
+      "resolucao": "1440x900",
+      "deteccoes": {
+        "pessoas": [
+          {
+            "id": "pessoa_sim_centro",
+            "tipo": "person",
+            "confianca": 0.85,
+            "posicao": {
+              "x": 360,
+              "y": 225,
+              "largura": 360,
+              "altura": 300
+            },
+            "timestamp": "2025-10-27T16:18:21.433830"
+          }
+        ],
+        "objetos": []
+      },
+      "analises": {
+        "movimentos": [
+          {
+            "id": "movimento_161821",
+            "tipo": "movimento_geral",
+            "intensidade": 5.01,
+            "descricao": "Movimento detectado com intensidade 5.0%",
+            "timestamp": "2025-10-27T16:18:21.506846"
+          }
+        ],
+        "interacoes": [],
+        "atividades_faciais": [
+          {
+            "id": "facial_0",
+            "pessoa_id": "pessoa_sim_centro",
+            "movimento_cabeca": "olhando_lado",
+            "postura_corporal": "agachado_ou_deitado",
+            "movimento_maos": "apontando",
+            "atividade_provavel": "descansando_ou_relaxando",
+            "confianca": 0.740954834498054,
+            "timestamp": "2025-10-27T16:18:21.641095"
+          }
+        ]
+      },
+      "resumo_captura": {
+        "total_pessoas": 1,
+        "total_objetos": 0,
+        "total_interacoes": 0,
+        "movimento_geral": 5.01
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:18:22.855014",
+      "arquivo": "capturas\\captura_20251027_161822_0002.jpg",
+      "tamanho_arquivo": 170618,
+      "resolucao": "1440x900",
+      "deteccoes": {
+        "pessoas": [
+          {
+            "id": "pessoa_sim_centro",
+            "tipo": "person",
+            "confianca": 0.85,
+            "posicao": {
+              "x": 360,
+              "y": 225,
+              "largura": 360,
+              "altura": 300
+            },
+            "timestamp": "2025-10-27T16:18:22.821503"
+          }
+        ],
+        "objetos": []
+      },
+      "analises": {
+        "movimentos": [
+          {
+            "id": "movimento_161822",
+            "tipo": "movimento_geral",
+            "intensidade": 5.01,
+            "descricao": "Movimento detectado com intensidade 5.0%",
+            "timestamp": "2025-10-27T16:18:22.852214"
+          }
+        ],
+        "interacoes": [],
+        "atividades_faciais": [
+          {
+            "id": "facial_0",
+            "pessoa_id": "pessoa_sim_centro",
+            "movimento_cabeca": "cabeca_alta",
+            "postura_corporal": "agachado_ou_deitado",
+            "movimento_maos": "gesticulando",
+            "atividade_provavel": "descansando_ou_relaxando",
+            "confianca": 0.7709955498988745,
+            "timestamp": "2025-10-27T16:18:22.853078"
+          }
+        ]
+      },
+      "resumo_captura": {
+        "total_pessoas": 1,
+        "total_objetos": 0,
+        "total_interacoes": 0,
+        "movimento_geral": 5.01
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:18:24.006065",
+      "arquivo": "capturas\\captura_20251027_161823_0003.jpg",
+      "tamanho_arquivo": 170618,
+      "resolucao": "1440x900",
+      "deteccoes": {
+        "pessoas": [
+          {
+            "id": "pessoa_sim_centro",
+            "tipo": "person",
+            "confianca": 0.85,
+            "posicao": {
+              "x": 360,
+              "y": 225,
+              "largura": 360,
+              "altura": 300
+            },
+            "timestamp": "2025-10-27T16:18:23.976121"
+          }
+        ],
+        "objetos": []
+      },
+      "analises": {
+        "movimentos": [
+          {
+            "id": "movimento_161824",
+            "tipo": "movimento_geral",
+            "intensidade": 5.01,
+            "descricao": "Movimento detectado com intensidade 5.0%",
+            "timestamp": "2025-10-27T16:18:24.002604"
+          }
+        ],
+        "interacoes": [],
+        "atividades_faciais": [
+          {
+            "id": "facial_0",
+            "pessoa_id": "pessoa_sim_centro",
+            "movimento_cabeca": "olhando_frente",
+            "postura_corporal": "agachado_ou_deitado",
+            "movimento_maos": "digitando",
+            "atividade_provavel": "descansando_ou_relaxando",
+            "confianca": 0.8113993390738079,
+            "timestamp": "2025-10-27T16:18:24.003902"
+          }
+        ]
+      },
+      "resumo_captura": {
+        "total_pessoas": 1,
+        "total_objetos": 0,
+        "total_interacoes": 0,
+        "movimento_geral": 5.01
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:18:25.271270",
+      "arquivo": "capturas\\captura_20251027_161825_0004.jpg",
+      "tamanho_arquivo": 170618,
+      "resolucao": "1440x900",
+      "deteccoes": {
+        "pessoas": [
+          {
+            "id": "pessoa_sim_centro",
+            "tipo": "person",
+            "confianca": 0.85,
+            "posicao": {
+              "x": 360,
+              "y": 225,
+              "largura": 360,
+              "altura": 300
+            },
+            "timestamp": "2025-10-27T16:18:25.220797"
+          }
+        ],
+        "objetos": []
+      },
+      "analises": {
+        "movimentos": [
+          {
+            "id": "movimento_161825",
+            "tipo": "movimento_geral",
+            "intensidade": 5.01,
+            "descricao": "Movimento detectado com intensidade 5.0%",
+            "timestamp": "2025-10-27T16:18:25.268339"
+          }
+        ],
+        "interacoes": [],
+        "atividades_faciais": [
+          {
+            "id": "facial_0",
+            "pessoa_id": "pessoa_sim_centro",
+            "movimento_cabeca": "olhando_frente",
+            "postura_corporal": "agachado_ou_deitado",
+            "movimento_maos": "digitando",
+            "atividade_provavel": "descansando_ou_relaxando",
+            "confianca": 0.8476154334833816,
+            "timestamp": "2025-10-27T16:18:25.269156"
+          }
+        ]
+      },
+      "resumo_captura": {
+        "total_pessoas": 1,
+        "total_objetos": 0,
+        "total_interacoes": 0,
+        "movimento_geral": 5.01
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:18:26.521960",
+      "arquivo": "capturas\\captura_20251027_161826_0005.jpg",
+      "tamanho_arquivo": 170618,
+      "resolucao": "1440x900",
+      "deteccoes": {
+        "pessoas": [
+          {
+            "id": "pessoa_sim_centro",
+            "tipo": "person",
+            "confianca": 0.85,
+            "posicao": {
+              "x": 360,
+              "y": 225,
+              "largura": 360,
+              "altura": 300
+            },
+            "timestamp": "2025-10-27T16:18:26.473823"
+          }
+        ],
+        "objetos": []
+      },
+      "analises": {
+        "movimentos": [
+          {
+            "id": "movimento_161826",
+            "tipo": "movimento_geral",
+            "intensidade": 5.01,
+            "descricao": "Movimento detectado com intensidade 5.0%",
+            "timestamp": "2025-10-27T16:18:26.512120"
+          }
+        ],
+        "interacoes": [],
+        "atividades_faciais": [
+          {
+            "id": "facial_0",
+            "pessoa_id": "pessoa_sim_centro",
+            "movimento_cabeca": "cabeca_baixa",
+            "postura_corporal": "agachado_ou_deitado",
+            "movimento_maos": "digitando",
+            "atividade_provavel": "descansando_ou_relaxando",
+            "confianca": 0.6155471407800759,
+            "timestamp": "2025-10-27T16:18:26.519454"
+          }
+        ]
+      },
+      "resumo_captura": {
+        "total_pessoas": 1,
+        "total_objetos": 0,
+        "total_interacoes": 0,
+        "movimento_geral": 5.01
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:18:27.833457",
+      "arquivo": "capturas\\captura_20251027_161827_0006.jpg",
+      "tamanho_arquivo": 170618,
+      "resolucao": "1440x900",
+      "deteccoes": {
+        "pessoas": [
+          {
+            "id": "pessoa_sim_centro",
+            "tipo": "person",
+            "confianca": 0.85,
+            "posicao": {
+              "x": 360,
+              "y": 225,
+              "largura": 360,
+              "altura": 300
+            },
+            "timestamp": "2025-10-27T16:18:27.783419"
+          }
+        ],
+        "objetos": []
+      },
+      "analises": {
+        "movimentos": [
+          {
+            "id": "movimento_161827",
+            "tipo": "movimento_geral",
+            "intensidade": 5.01,
+            "descricao": "Movimento detectado com intensidade 5.0%",
+            "timestamp": "2025-10-27T16:18:27.824122"
+          }
+        ],
+        "interacoes": [],
+        "atividades_faciais": [
+          {
+            "id": "facial_0",
+            "pessoa_id": "pessoa_sim_centro",
+            "movimento_cabeca": "cabeca_baixa",
+            "postura_corporal": "agachado_ou_deitado",
+            "movimento_maos": "digitando",
+            "atividade_provavel": "descansando_ou_relaxando",
+            "confianca": 0.852127141195268,
+            "timestamp": "2025-10-27T16:18:27.824971"
+          }
+        ]
+      },
+      "resumo_captura": {
+        "total_pessoas": 1,
+        "total_objetos": 0,
+        "total_interacoes": 0,
+        "movimento_geral": 5.01
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:18:29.013525",
+      "arquivo": "capturas\\captura_20251027_161828_0007.jpg",
+      "tamanho_arquivo": 170618,
+      "resolucao": "1440x900",
+      "deteccoes": {
+        "pessoas": [
+          {
+            "id": "pessoa_sim_centro",
+            "tipo": "person",
+            "confianca": 0.85,
+            "posicao": {
+              "x": 360,
+              "y": 225,
+              "largura": 360,
+              "altura": 300
+            },
+            "timestamp": "2025-10-27T16:18:28.984935"
+          }
+        ],
+        "objetos": []
+      },
+      "analises": {
+        "movimentos": [
+          {
+            "id": "movimento_161829",
+            "tipo": "movimento_geral",
+            "intensidade": 5.01,
+            "descricao": "Movimento detectado com intensidade 5.0%",
+            "timestamp": "2025-10-27T16:18:29.009053"
+          }
+        ],
+        "interacoes": [],
+        "atividades_faciais": [
+          {
+            "id": "facial_0",
+            "pessoa_id": "pessoa_sim_centro",
+            "movimento_cabeca": "cabeca_alta",
+            "postura_corporal": "agachado_ou_deitado",
+            "movimento_maos": "segurando_objeto",
+            "atividade_provavel": "descansando_ou_relaxando",
+            "confianca": 0.663030363445115,
+            "timestamp": "2025-10-27T16:18:29.010079"
+          }
+        ]
+      },
+      "resumo_captura": {
+        "total_pessoas": 1,
+        "total_objetos": 0,
+        "total_interacoes": 0,
+        "movimento_geral": 5.01
+      }
+    },
+    {
+      "timestamp": "2025-10-27T16:18:30.298191",
+      "arquivo": "capturas\\captura_20251027_161830_0008.jpg",
+      "tamanho_arquivo": 170618,
+      "resolucao": "1440x900",
+      "deteccoes": {
+        "pessoas": [
+          {
+            "id": "pessoa_sim_centro",
+            "tipo": "person",
+            "confianca": 0.85,
+            "posicao": {
+              "x": 360,
+              "y": 225,
+              "largura": 360,
+              "altura": 300
+            },
+            "timestamp": "2025-10-27T16:18:30.265838"
+          }
+        ],
+        "objetos": []
+      },
+      "analises": {
+        "movimentos": [
+          {
+            "id": "movimento_161830",
+            "tipo": "movimento_geral",
+            "intensidade": 5.01,
+            "descricao": "Movimento detectado com intensidade 5.0%",
+            "timestamp": "2025-10-27T16:18:30.291848"
+          }
+        ],
+        "interacoes": [],
+        "atividades_faciais": [
+          {
+            "id": "facial_0",
+            "pessoa_id": "pessoa_sim_centro",
+            "movimento_cabeca": "olhando_lado",
+            "postura_corporal": "agachado_ou_deitado",
+            "movimento_maos": "segurando_objeto",
+            "atividade_provavel": "descansando_ou_relaxando",
+            "confianca": 0.6721325613365388,
+            "timestamp": "2025-10-27T16:18:30.292730"
+          }
+        ]
+      },
+      "resumo_captura": {
+        "total_pessoas": 1,
+        "total_objetos": 0,
+        "total_interacoes": 0,
+        "movimento_geral": 5.01
+      }
+    }
+  ],
+  "narrativa": "Foi detectada presença humana em 8 capturas durante a sessão. Nenhum objeto específico foi detectado nas capturas. O período de maior atividade foi registrado às 16:18:21.",
+  "status": "sucesso"
+}
