@@ -12,7 +12,19 @@ import time
 from datetime import datetime
 import json
 import matplotlib.pyplot as plt
-from PIL import ImageGrab
+from PIL import ImageGrab, Image
+import pyautogui
+import ctypes
+
+# Suporte Win32 para captura de janela oculta/minimizada
+try:
+    import win32gui
+    import win32ui
+    import win32con
+    HAS_WIN32 = True
+except Exception:
+    HAS_WIN32 = False
+import pyautogui
 from functools import lru_cache
 from detector_avancado import DetectorAvancado
 
@@ -50,14 +62,74 @@ class MonitorTela:
     
     @lru_cache(maxsize=1)
     def capturar_tela(self):
-        """Captura a tela atual de forma otimizada"""
+        """Captura apenas a janela 'DroidCam Client' se encontrada, incluindo casos cobertos/minimizados (via PrintWindow), senão captura a tela inteira."""
         try:
-            # Captura otimizada com cache de resolução
-            if self._cache_resolucao is None:
-                screenshot = ImageGrab.grab()
+            # Preferência: tentar PrintWindow (funciona coberta/minimizada em muitos casos)
+            def _capture_droidcam_printwindow(title='DroidCam Client'):
+                if not HAS_WIN32:
+                    return None
+                try:
+                    hwnd = win32gui.FindWindow(None, title)
+                    if hwnd == 0:
+                        matches = []
+                        def _enum_cb(h, _):
+                            try:
+                                t = win32gui.GetWindowText(h) or ''
+                                if title.lower() in t.lower():
+                                    matches.append(h)
+                            except Exception:
+                                pass
+                        win32gui.EnumWindows(_enum_cb, None)
+                        if matches:
+                            hwnd = matches[0]
+                    if hwnd == 0:
+                        return None
+                    left, top, right, bottom = win32gui.GetWindowRect(hwnd)
+                    width = right - left
+                    height = bottom - top
+                    hwndDC = win32gui.GetWindowDC(hwnd)
+                    mfcDC = win32ui.CreateDCFromHandle(hwndDC)
+                    saveDC = mfcDC.CreateCompatibleDC()
+                    saveBitMap = win32ui.CreateBitmap()
+                    saveBitMap.CreateCompatibleBitmap(mfcDC, width, height)
+                    saveDC.SelectObject(saveBitMap)
+                    PW_RENDERFULLCONTENT = 0x00000002
+                    result = ctypes.windll.user32.PrintWindow(hwnd, saveDC.GetSafeHdc(), PW_RENDERFULLCONTENT)
+                    bmpinfo = saveBitMap.GetInfo()
+                    bmpstr = saveBitMap.GetBitmapBits(True)
+                    im = Image.frombuffer('RGB', (bmpinfo['bmWidth'], bmpinfo['bmHeight']), bmpstr, 'raw', 'BGRX', 0, 1)
+                    win32gui.DeleteObject(saveBitMap.GetHandle())
+                    saveDC.DeleteDC()
+                    mfcDC.DeleteDC()
+                    win32gui.ReleaseDC(hwnd, hwndDC)
+                    if result != 1:
+                        return None
+                    return im
+                except Exception as e:
+                    print(f"⚠️ Falha PrintWindow: {e}")
+                    return None
+
+            im = _capture_droidcam_printwindow()
+            if im is not None:
+                screenshot = im
                 self._cache_resolucao = screenshot.size
             else:
-                screenshot = ImageGrab.grab()
+                # Fallback: tentar achar bbox e capturar via ImageGrab
+                try:
+                    wins = pyautogui.getWindowsWithTitle('DroidCam Client')
+                    if wins:
+                        w = wins[0]
+                        bbox = (w.left, w.top, w.left + w.width, w.top + w.height)
+                        screenshot = ImageGrab.grab(bbox=bbox)
+                        self._cache_resolucao = screenshot.size
+                    else:
+                        screenshot = ImageGrab.grab()
+                        if self._cache_resolucao is None:
+                            self._cache_resolucao = screenshot.size
+                except Exception:
+                    screenshot = ImageGrab.grab()
+                    if self._cache_resolucao is None:
+                        self._cache_resolucao = screenshot.size
             
             # Converte para numpy array de forma mais eficiente
             imagem_array = np.array(screenshot)

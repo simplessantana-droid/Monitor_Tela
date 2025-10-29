@@ -13,6 +13,17 @@ from detector_avancado import DetectorAvancado
 import pyautogui
 import cv2
 import numpy as np
+from PIL import Image
+import ctypes
+
+# Suporte a captura de janela mesmo coberta/minimizada via Win32
+try:
+    import win32gui
+    import win32ui
+    import win32con
+    HAS_WIN32 = True
+except Exception:
+    HAS_WIN32 = False
 
 class CapturaContinua:
     def __init__(self, intervalo_captura=0.5, intervalo_relatorio=60):
@@ -46,11 +57,101 @@ class CapturaContinua:
         print("🔄 Capturando indefinidamente... (Ctrl+C para parar)")
         print("-" * 60)
     
-    def capturar_tela(self):
-        """Captura a tela atual"""
+    def _bbox_droidcam(self):
+        """Localiza a janela 'DroidCam Client' e retorna sua região (x, y, w, h)."""
         try:
-            # Capturar screenshot
-            screenshot = pyautogui.screenshot()
+            windows = pyautogui.getWindowsWithTitle('DroidCam Client')
+            if windows:
+                win = windows[0]
+                return (win.left, win.top, win.width, win.height)
+        except Exception as e:
+            print(f"⚠️ Não foi possível obter a janela DroidCam Client: {e}")
+        return None
+
+    def _capturar_droidcam_printwindow(self, titulo='DroidCam Client'):
+        """Captura o conteúdo da janela usando Win32 PrintWindow (funciona mesmo coberta e, em muitos casos, minimizada)."""
+        if not HAS_WIN32:
+            return None
+        try:
+            hwnd = win32gui.FindWindow(None, titulo)
+            if hwnd == 0:
+                # Tenta encontrar por título parcial
+                encontrados = []
+                def _enum_cb(h, _):
+                    try:
+                        t = win32gui.GetWindowText(h) or ''
+                        if titulo.lower() in t.lower():
+                            encontrados.append(h)
+                    except Exception:
+                        pass
+                win32gui.EnumWindows(_enum_cb, None)
+                if encontrados:
+                    hwnd = encontrados[0]
+            if hwnd == 0:
+                return None
+
+            # Obter dimensões da janela
+            left, top, right, bottom = win32gui.GetWindowRect(hwnd)
+            width = right - left
+            height = bottom - top
+
+            # Preparar DCs e bitmap compatíveis
+            hwndDC = win32gui.GetWindowDC(hwnd)
+            mfcDC = win32ui.CreateDCFromHandle(hwndDC)
+            saveDC = mfcDC.CreateCompatibleDC()
+            saveBitMap = win32ui.CreateBitmap()
+            saveBitMap.CreateCompatibleBitmap(mfcDC, width, height)
+            saveDC.SelectObject(saveBitMap)
+
+            # PW_RENDERFULLCONTENT (2) tenta capturar conteúdo completo
+            # Usa PrintWindow via ctypes para evitar dependência específica
+            PW_RENDERFULLCONTENT = 0x00000002
+            result = ctypes.windll.user32.PrintWindow(hwnd, saveDC.GetSafeHdc(), PW_RENDERFULLCONTENT)
+
+            # Extrair bitmap para imagem
+            bmpinfo = saveBitMap.GetInfo()
+            bmpstr = saveBitMap.GetBitmapBits(True)
+            img = Image.frombuffer(
+                'RGB',
+                (bmpinfo['bmWidth'], bmpinfo['bmHeight']),
+                bmpstr,
+                'raw',
+                'BGRX',
+                0,
+                1
+            )
+
+            # Limpeza
+            win32gui.DeleteObject(saveBitMap.GetHandle())
+            saveDC.DeleteDC()
+            mfcDC.DeleteDC()
+            win32gui.ReleaseDC(hwnd, hwndDC)
+
+            if result != 1:
+                return None
+
+            # Converter para BGR (OpenCV)
+            return cv2.cvtColor(np.array(img), cv2.COLOR_RGB2BGR)
+        except Exception as e:
+            print(f"⚠️ Falha PrintWindow: {e}")
+            return None
+
+    def capturar_tela(self):
+        """Captura somente a janela DroidCam Client, se disponível; caso contrário, captura a tela inteira."""
+        try:
+            # Tentativa preferencial: captura por PrintWindow (funciona coberta/minimizada em muitos casos)
+            img_bgr_pw = self._capturar_droidcam_printwindow()
+            if img_bgr_pw is not None:
+                return img_bgr_pw
+
+            # Fallback: captura por região na tela
+            bbox = self._bbox_droidcam()
+            if bbox:
+                x, y, w, h = bbox
+                screenshot = pyautogui.screenshot(region=(x, y, w, h))
+            else:
+                # Fallback final: captura completa da tela
+                screenshot = pyautogui.screenshot()
             
             # Converter para array numpy
             img_array = np.array(screenshot)
@@ -116,9 +217,12 @@ class CapturaContinua:
                   f"Pessoas: {pessoas} | Objetos: {objetos}")
             
             if pessoas > 0 or objetos > 0:
+                # Mantém a narrativa detalhada e adiciona saída no formato "Response:" como no painel
                 print(f"  📝 {narrativa}")
+                print(f"  Response: {narrativa}")
         else:
             print(f"[{timestamp}] Captura #{self.contador_capturas:04d} | Sem detecções")
+            print("  Response: Cena sem atividade detectável.")
     
     def salvar_relatorio_periodico(self):
         """Salva relatório baseado no tempo (a cada minuto)"""
